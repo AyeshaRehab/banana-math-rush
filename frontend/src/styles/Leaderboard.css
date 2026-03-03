@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;700&display=swap');
+
+/* Full-screen Background */
+.rehab {
+    margin: 0;
+    padding: 0;
+    background: url('../images/g5.png') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    font-family: 'Baloo Bhai 2', cursive;
+    text-align: center;
+}
+.hii{
+    font-size: 3.5rem;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Title Style */
+.lb {
+    font-size: 3.5rem;
+    color: #E65A50;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+/* Leaderboard Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: black;
+    border: 4px solid black;
+    margin-top: 20px;
+}
+
+/* Table Headers */
+th {
+    background-color: #E65A50;
+    color: black;
+    font-size: 1.5rem;
+    padding: 15px;
+    border-bottom: 4px solid black;
+}
+
+/* Table Cells */
+td {
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: bold;
+    padding: 15px;
+    border-bottom: 2px solid #000;
+}
+
+/* Row Colors */
+tbody tr:nth-child(even) {
+    background:  #c58892;
+    
+}
+
+tbody tr:nth-child(odd) {
+    background: #eccfd0;
+}
+
+/* Hover Effect */
+tbody tr:hover {
+    background: #f8b797;
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        width: 90%;
+    }
+
+    .lb {
+        font-size: 2.5rem;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 1.1rem;
+    }
+}

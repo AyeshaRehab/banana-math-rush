@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;700&display=swap');
+
+.levels-container {
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: url("../images/g8.png") no-repeat center center/cover;
+}
+
+.levels-title {
+    font-size: 3.5rem;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.level-button {
+    width: 250px;
+    padding: 15px;
+    background-color: rgba(236, 205, 198, 0.79);
+    border: 4px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 111, 97, 0.7);
+}
+
+.level-button:hover {
+    transform: scale(1.05);
+    background-color: #E65A50;
+    box-shadow: 0 0 20px rgba(255, 111, 97, 1);
+}
+
+@media (max-width: 768px) {
+    .level-button {
+        font-size: 1.5rem;
+        width: 200px;
+    }
+}

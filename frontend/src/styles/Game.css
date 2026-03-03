@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;700&display=swap');
+
+.game-container {
+  text-align: center;
+  font-family: 'Baloo Bhai 2', cursive;
+  background: url("../images/ggame.png") no-repeat center center/cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Heading Style */
+.heee {
+    color: #E65A50;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    margin-bottom: 20px;
+}
+
+/* Question Box Image */
+.question-box img {
+    width: 650px;
+    height: auto;
+    border: 5px solid black;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
+    margin-top: 1px;
+}
+
+/* Input Field */
+input {
+    padding: 5px;
+    font-size: 1.5rem;
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 30px;
+    border: 4px solid black;
+    box-shadow: 0 0 10px rgba(255, 111, 97, 0.7);
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* General Button Style */
+button {
+    width: 250px;
+    padding: 8px;
+    font-size: 1.5rem;
+    background-color: rgba(236, 205, 198, 0.79);
+    border: 4px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    font-family: 'Baloo Bhai 2', cursive;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 111, 97, 0.7);
+}
+
+/* Button Hover Effect */
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 111, 97, 1);
+}
+/* Timer Styling */
+.timer {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff4500; /* Tomato Orange */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 15px 0;
+    text-align: center;
+    animation: pulse 1s infinite alternate;
+}
+
+/* Timer Animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+/* Change color when time is running out */
+.timer.low-time {
+    color: #ff0000; /* Red for urgency */
+    animation: shake 0.5s infinite alternate;
+}
+
+/* Shake animation when time is low */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(3px); }
+}
+
+
+/* Message Display */
+.messages {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #E65A50;
+    margin-top: -35px;
+    margin-left: -1020px;
+}
+
+.ply {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #E65A50;
+    margin-top: -125px;
+    margin-left: 1020px;
+}
+/* New Question Button */
+.new-question-btn {
+    background-color: rgba(236, 205, 198, 0.79);
+    color: black;
+    border: 4px solid black;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 111, 97, 0.7);
+    padding: 1px;
+    font-size: 1.2rem;
+}
+
+.new-question-btns {
+    background-color: rgba(236, 205, 198, 0.79);
+    color: black;
+    border: 4px solid black;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 111, 97, 0.7);
+    padding: 1px;
+    font-size: 1.2rem;
+}
+
+.new-question-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 111, 97, 1);
+}
+
+
+
+/* SweetAlert2 Custom Styles */
+.swal-theme-popup {
+    background-color: rgb(236, 205, 198); /* Soft pinkish-beige */
+    border: 4px solid black;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255, 111, 97, 0.7);
+    font-family: 'Baloo Bhai 2', cursive;
+    text-align: center;
+    width: 400px;
+}
+
+.swal-theme-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #E65A50; /* Main theme color */
+    
+}
+
+.swal-theme-button {
+    background-color: #E65A50;
+    border: 3px solid black;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    padding: 5px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 111, 97, 0.7);
+}
+
+.swal-theme-button:hover {
+    transform: scale(1.05);
+    background-color: #E65A50;
+    box-shadow: 0 0 20px rgba(255, 111, 97, 1);
+}

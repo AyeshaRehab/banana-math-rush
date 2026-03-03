@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;700&display=swap');
+
+/* Full-screen Background */
+.settings-container {
+    margin: 0;
+    padding: 0;
+    background: url("../images/g8.png") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* Box Around Settings */
+.settings-box {
+    max-width: 600px;
+    padding: 40px;
+    text-align: center;
+    background-color: rgba(236, 205, 198, 0.85); /* Semi-transparent, matching leaderboard */
+    border: 4px solid black;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Title Styling */
+.settings-title {
+    font-size: 3rem;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Toggle Switch Container */
+.toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+    margin-top: 20px;
+}
+
+/* Toggle Label */
+.toggle-label {
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    width: 85px;
+    height: 40px;
+}
+
+
+/* Toggle Switch */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 45px;
+}
+
+/* Hide Default Checkbox */
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 50px;
+    margin-top: 20px;
+}
+
+/* Slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffddcc;
+    transition: 0.4s;
+    border-radius: 36px;
+    border: 3px solid black;
+}
+
+/* Slider Circle */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 28px;
+    width: 28px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+/* Checked State */
+input:checked + .slider {
+    background-color: #E65A50;
+}
+
+input:checked + .slider:before {
+    transform: translateX(32px);
+}
+
+/* Hover Effect */
+.toggle-switch:hover .slider {
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .settings-box {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .settings-title {
+        font-size: 2.5rem;
+    }
+
+    .toggle-container {
+        font-size: 1.5rem;
+    }
+
+    .toggle-switch {
+        width: 60px;
+        height: 32px;
+    }
+
+    .slider:before {
+        width: 26px;
+        height: 26px;
+    }
+}
